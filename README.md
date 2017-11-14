@@ -5,7 +5,6 @@ A pattern focusing on how to use scikit learn and python (in DSX) to predict opi
 
 ## Intro
 
-Follow the template! After the title use a few sentences to say what the journey will do, mention key technologies and list goals.
 This pattern dives into a dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific prescriptions they've prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings using Pixie Dust, and then use scikit learn to use machine learning to train several models and evaluate which have the most accurate predictions of opioid prescriptions. 
 
 ## Architecture Image
@@ -15,9 +14,9 @@ This pattern dives into a dataset which looks at opioid overdose deaths by state
 ## Flow
 
 1. Log in to or start a DSX account.
-2. Upload the data as a data assett into DSX.
+2. Upload the data as a data asset into DSX.
 3. Start a notebook in DSX.
-4. Input the data into your notebook from your data assetts.
+4. Input the data into your notebook from your data assets.
 5. Explore the data with python pandas and Pixie Dust.
 6. Train machine learning models with scikit learn.
 7. Evaluate their prediction performance.
