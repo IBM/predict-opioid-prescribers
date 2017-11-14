@@ -9,7 +9,7 @@ This pattern dives into a dataset which looks at opioid overdose deaths by state
 
 ## Architecture Image
 
-![alt text](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/docs/images/architecture.png)
+![alt text](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/docs/source/images/architecture.png)
 
 ## Flow
 
