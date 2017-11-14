@@ -1,56 +1,47 @@
-## Contributing In General
+# Maintainers Guide
 
-Our project welcomes external contributions! If you have an itch, please
-feel free to scratch it.
+This guide is intended for maintainers — anybody with commit access to one or more Developer Journey repositories.
 
-To contribute code or documentation, please submit a pull request to the [GitHub
-repository](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers).
+# Methodology:
 
-A good way to familiarize yourself with the codebase and contribution process is
-to look for and tackle low-hanging fruit in the [issue
-tracker](https://github.com/IBM/placeholder/issues). Before embarking on
-a more ambitious contribution, please quickly [get in touch](#communication)
-with us.
+A master branch. This branch MUST be releasable at all times. Commits and merges against this branch MUST contain only bugfixes and/or security fixes. Maintenance releases are tagged against master.
 
-**We appreciate your effort, and want to avoid a situation where a contribution
-requires extensive rework (by you or by us), sits in the queue for a long time,
-or cannot be accepted at all!**
+A develop branch. This branch contains your proposed changes.
 
-### Proposing new features
+The remainder of this document details how to merge pull requests to the repositories.
 
-If you would like to implement a new feature, please [raise an
-issue](https://github.com/IBM/placeholder/issues) before sending a pull
-request so the feature can be discussed. This is to avoid you spending your
-valuable time working on a feature that the project developers are not willing
-to accept into the code base.
+# Merge approval
 
-### Fixing bugs
+The project maintainers use LGTM (Looks Good To Me) in comments on the code review to indicate acceptance. A change requires LGTMs from two of the members of the cda-journey-dev-admins team. If the code is written by a member, the change only requires one more LGTM.
 
-If you would like to fix a bug, please [raise an
-issue](https://github.com/IBM/placeholder/issues) before sending a pull
-request so it can be discussed. If the fix is trivial or non controversial then
-this is not usually necessary.
+# Reviewing Pull Requests
 
-### Merge approval
+We recommend reviewing pull requests directly within GitHub. This allows a public commentary on changes, providing transparency for all users. When providing feedback be civil, courteous, and kind. Disagreement is fine, so long as the discourse is carried out politely. 
+If we see a record of uncivil or abusive comments, we will revoke your commit privileges and invite you to leave the project.
 
-The project maintainers use LGTM (Looks Good To Me) in comments on the code
-review to indicate acceptance. A change requires LGTMs from two of the
-maintainers of each component affected.
+During your review, consider the following points:
 
-For more details, see the [MAINTAINERS](MAINTAINERS.md) page.
+## Does the change have impact?
 
-## Communication
+While fixing typos is nice as it adds to the overall quality of the project, merging a typo fix at a time can be a waste of effort. (Merging many typo fixes because somebody reviewed the entire component, however, is useful!) Other examples to be wary of:
 
-Please feel free to connect with us: [here](https://github.com/IBM/placeholder/issues)
+Changes in variable names. Ask whether or not the change will make understanding the code easier, or if it could simply a personal preference on the part of the author.
 
-## Setup
+Essentially: feel free to close issues that do not have impact.
 
-Setup instructions are given for a Mac environment.
+## Do the changes make sense?
 
-## Testing
+If you do not understand what the changes are or what they accomplish, ask the author for clarification. Ask the author to add comments and/or clarify test case names to make the intentions clear.
 
-Please test your code before submitting any additions.
+At times, such clarification will reveal that the author may not be using the code correctly, or is unaware of features that accommodate their needs. If you feel this is the case, work up a code sample that would address the issue for them, and feel free to close the issue once they confirm.
+Is this a new feature? If so:
 
-## Coding style guidelines
+## Does the issue contain narrative indicating the need for the feature? 
 
-Beautiful code rocks! 
+If not, ask them to provide that information. Since the issue will be linked in the changelog, this will often be a user’s first introduction to it.
+
+Are new unit tests in place that test all new behaviors introduced? If not, do not merge the feature until they are! 
+
+## Is documentation in place for the new feature? (See the documentation guidelines). 
+If not do not merge the feature until it is! Is the feature necessary for general use cases? Try and keep the scope of any given component narrow. If a proposed feature does not fit that scope, recommend to the user that they maintain the feature on their own, and close the request. 
+You may also recommend that they see if the feature gains traction amongst other users, and suggest they re-submit when they can show such support.
