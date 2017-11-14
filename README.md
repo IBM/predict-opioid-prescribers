@@ -9,7 +9,7 @@ Follow the template! After the title use a few sentences to say what the journey
 
 ## Architecture Image
 
-Create an image showing the main components and numbering the flow. Start with your own rough draft with all the necessary information. Publishing will take your draft make it pretty/consistent. You should replace yours with theirs when you get it.
+![alt text](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/docs/images/architecture.png)
 
 ## Flow
 
