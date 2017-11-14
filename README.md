@@ -6,6 +6,7 @@ A pattern focusing on how to use scikit learn and python (in DSX) to predict opi
 ## Intro
 
 Follow the template! After the title use a few sentences to say what the journey will do, mention key technologies and list goals.
+This pattern dives into a dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific prescriptions they've prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings using Pixie Dust, and then use scikit learn to use machine learning to train several models and evaluate which have the most accurate predictions of opioid prescriptions. 
 
 ## Architecture Image
 
@@ -13,19 +14,25 @@ Follow the template! After the title use a few sentences to say what the journey
 
 ## Flow
 
-There is a **Flow** section, which is a numbered list that matches and explains the numbers in the architecture image.
-
-## With Watson
-
-Copy the **With Watson** section and use it as-is (unless you don't use Watson at all).
+1. Log in to or start a DSX account.
+2. Upload the data as a data assett into DSX.
+3. Start a notebook in DSX.
+4. Input the data into your notebook from your data assetts.
+5. Explore the data with python pandas and Pixie Dust.
+6. Train machine learning models with scikit learn.
+7. Evaluate their prediction performance.
 
 ## Included components
 
-Take component links and text from the [here](components.md).
+* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
+* [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust): Provides a Python helper library for IPython Notebook.
 
 ## Featured technologies
 
-Take technology links and text from the [here](technologies.md).
+* [Data Science](https://medium.com/ibm-data-science-experience/): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
+* [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+* [pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
 
 ## Watch the Video
 
@@ -33,24 +40,26 @@ See the template or example journeys for how to include a link to your video wit
 
 ## Steps
 
-Make sure the steps are complete, clear and accurate enough to get a developer through the journey! The template shows an example where we have a *Deploy to Bluemix* button and a *Run locally* option. Ideally we'll get a lot of consistency with these 2 options and this template, but it will vary.
+1. Upload the data to DSX as data assetts (this particular kaggle problem has three datasets).
+2. Start a notebook and load the data assetts into it as three seperate pandas dataframes.
+3. Explore the different datasets using python, pandas and Pixie Dust.
+4. Clean the data using python.
+5. Run several models to predict opioid prescribers using scikit learn.
+6. Evaluate the models.
 
-* Use a numbered list for the steps and be sure to test the links.
-* Do not be overly verbose or include screenshots for routine steps, like signing up for Bluemix, or creating a service in Bluemix. These are obvious and don't need more than a single sentence.
-* Follow the example for linking to services (for manual service creation).
-* Try to follow existing journey examples for consistency and help us improve our templates and examples too.
+For the code, see the notebook found under docs/source/notebooks!
 
 ## Sample output
 
-Use a final _Analyze the results_ or _Conclusion_ step above, plus sample output to wrap up the journey for a developer running it and also for people that are only going to read the README. Sample output format will vary depending on the journey technology used.
+After running various classifiers, we find that Random Forest, Gradient Boosting and our Ensemble models had the best performance on predicting opioid prescribers.
 
 ## Links
 
-Find some interesting links for this list. Include a link to the video even though it is mentioned above.
-
-## Troubleshooting
-
-Please follow the example format or contribute templates or suggestions. Break out troubleshooting into it's own .MD file when the section gets long.
+ - DSX:https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
+ - Pandas:http://pandas.pydata.org/
+ - Pixie Dust: https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html#introduction
+ - Data: https://www.kaggle.com/apryor6/us-opiate-prescriptions/data
+ - Scikit Learn: http://scikit-learn.org/stable/
 
 ## License
 
