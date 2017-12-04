@@ -35,16 +35,61 @@ This pattern dives into a dataset which looks at opioid overdose deaths by state
 
 ## Watch the Video
 
-See the template or example journeys for how to include a link to your video with a preview. Say the YouTube video is at `https://www.youtube.com/watch?v=Jxi7U7VOMYg`, that means the video ID is `Jxi7U7VOMYg`. To generate a video preview, add the following snippet, replacing `Jxi7U7VOMYg` with the new video ID:  ``[![](http://img.youtube.com/vi/Jxi7U7VOMYg/0.jpg)](https://youtu.be/Jxi7U7VOMYg)``
+TBD
 
 ## Steps
 
-1. Upload the data to DSX as data assetts (this particular kaggle problem has three datasets).
-2. Start a notebook and load the data assetts into it as three seperate pandas dataframes.
-3. Explore the different datasets using python, pandas and Pixie Dust.
-4. Clean the data using python.
-5. Run several models to predict opioid prescribers using scikit learn.
-6. Evaluate the models.
+1. Sign up for the Data Science Experience.
+2. Create a notebook and load the data assetts into it as three seperate pandas dataframes.
+3. Upload the data to DSX as data assetts (this particular kaggle problem has three datasets).
+4. Explore the different datasets using python, pandas and Pixie Dust.
+5. Clean the data using python.
+6. Run several models to predict opioid prescribers using scikit learn.
+7. Evaluate the models.
+
+1. Sign up for the Data Science Experience
+
+Sign up for IBM's Data Science Experience. By signing up for the Data Science Experience, two services: DSX-Spark and DSX-ObjectStore will be created in your Bluemix account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+
+To create these services:
+
+    Login to your Bluemix account.
+    Create your Spark service by selecting the service type Apache Spark. If not already used, name your service DSX-Spark.
+    Create your Object Storage service by selecting the service type Cloud Object Storage. If not already used, name your service DSX-ObjectStorage.
+
+    Note: When creating your Object Storage service, select the Swift storage type in order to avoid having to pay an upgrade fee.
+
+Take note of your service names as you will need to select them in the following steps.
+
+ 
+2. Create a notebook and load the data assetts into it as three seperate pandas dataframes.
+
+First you must create a new Project:
+
+    From the IBM Data Science Experience page either click the Get Started tab at the top or scroll down to Recently updated projects.
+    Click on New project under Recently updated projects.
+    Enter a Name and optional Description.
+    For Spark Service, select your Apache Spark service name.
+    For Storage Type, select the Object Storage (Swift API) option.
+    For Target Object Storage Instance, select your Object Storage service name.
+    Click Create.
+
+Create the Notebook:
+
+    Click on your project to open up the project details panel.
+    Click add notebooks.
+    Click the tab for From URL and enter a Name and optional Description.
+    For Notebook URL enter: https://github.com/IBM/spark-tpc-ds-performance-test/blob/master/notebooks/run-tpcds-on-spark.ipynb
+    For Spark Service, select your Apache Spark service name.
+    Click Create Notebook.
+3. Upload the data to DSX as data assets (this particular kaggle problem has three datasets).
+
+ To begin, I used the included data as my three data assets. You'll want to upload each as a data asset and once that is    complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). To load your data in your notebook, you'll click on the "1001" data icon in the top right. The combined_data.csv should show up. Click on it and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
+ 
+4. Explore the different datasets using python, pandas and Pixie Dust.
+5. Clean the data using python.
+6. Run several models to predict opioid prescribers using scikit learn.
+7. Evaluate the models.
 
 For the code, see the notebook found under docs/source/notebooks or view the notebook here: https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905!
 
