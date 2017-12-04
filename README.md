@@ -39,13 +39,13 @@ TBD
 
 ## Steps
 
-1. Sign up for the Data Science Experience.
-2. Create a notebook and load the data assetts into it as three seperate pandas dataframes.
-3. Upload the data to DSX as data assetts (this particular kaggle problem has three datasets).
-4. Explore the different datasets using python, pandas and Pixie Dust.
-5. Clean the data using python.
-6. Run several models to predict opioid prescribers using scikit learn.
-7. Evaluate the models.
+    1. Sign up for the Data Science Experience.
+    2. Create a notebook and load the data assetts into it as three seperate pandas dataframes.
+    3. Upload the data to DSX as data assetts (this particular kaggle problem has three datasets).
+    4. Explore the different datasets using python, pandas and Pixie Dust.
+    5. Clean the data using python.
+    6. Run several models to predict opioid prescribers using scikit learn.
+    7. Evaluate the models.
 
 1. Sign up for the Data Science Experience
 
