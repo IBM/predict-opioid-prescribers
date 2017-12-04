@@ -4,8 +4,9 @@ A pattern focusing on how to use scikit learn and python (in DSX) to predict opi
 ## Use Machine Learning to Predict U.S. Opioid Prescribers with DSX and Scikit Learn
 
 ## Intro
+Opioid prescriptions and overdoses are becoming an increasingly overwhelming problem for the United States, even causing an official state of emergency based on the amount of deaths caused by the problem. Though we, as data scientists, may not be able to single handedly fix this problem, we can dive into the data and figure out what exactly is going on and what may happen in the future given current circumstances.
 
-This pattern dives into a dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific prescriptions they've prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings using Pixie Dust, and then use scikit learn to use machine learning to train several models and evaluate which have the most accurate predictions of opioid prescriptions. 
+This pattern aims to do just that: it dives into a kaggle dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific prescriptions they've prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings geographically and otherwise using Pixie Dust, and then use scikit learn to use machine learning and train several models to figure out which have the most accurate predictions of opioid prescriptions. 
 
 ## Architecture Image
 
