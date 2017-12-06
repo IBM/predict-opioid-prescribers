@@ -159,7 +159,7 @@ Every dataset has its imperfections. Let's clean ours up by making the States co
 
 4. Run several models to predict opioid prescribers using scikit learn.
 
-You can check out the output in the notebook or in the image below. But in this step we run several machine learning models in order to evaluate which is the most effective at predicting opioid prescribers. Though it is beyond the scope of this pattern, by predicting these opioid prescribers you are laying the framework to predict the likelihood that a certain type of doctor prescribes opioids. Additionally, if we had more years of data (beyond 2014) we could also predict future rates of overdoses. For now, we'll just take a look at the models.
+You can check out the output in the notebook or in the image below. In this step we run several machine learning models in order to evaluate which is the most effective at predicting opioid prescribers. Though it is beyond the scope of this pattern, by predicting these opioid prescribers you are laying the framework to predict the likelihood that a certain type of doctor prescribes opioids. Additionally, if we had more years of data (beyond 2014) we could also predict future rates of overdoses. For now, we'll just take a look at the models.
 
 5. Evaluate the models.
 
