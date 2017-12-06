@@ -88,7 +88,6 @@ Create the Notebook:
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
-![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
 
 ### 3. Run the notebook
 
@@ -148,9 +147,20 @@ options to specify exactly what you want shared from your notebook:
 
  To begin, I used the included data as my three data assets. You'll want to upload each as a data asset and once that is    complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). To load your data in your notebook, you'll click on the "1001" data icon in the top right. The combined_data.csv should show up. Click on it and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
  
-2. Explore the different datasets using python, pandas and Pixie Dust.
+ ![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
+ 
+2. Explore the different datasets using python, pandas and Pixie Dust. Feel free to [follow along in DSX](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905)
+
+To get familiar with your data, explore it with visualizations and by looking at subsets of the data. For example, we see that though California has the highest overdoses, when we correct for population we see that West Virginia actually has the highest rate of overdoses per capita.
+
 3. Clean the data using python.
+
+Every dataset has its imperfections. Let's clean ours up by making the States consistent and changing our columns to allow us to use them as integers.
+
 4. Run several models to predict opioid prescribers using scikit learn.
+
+You can check out the output in the notebook or in the image below. But here we run several machine learning models in order to evaluate which is the most effective at predicting opioid prescribers. Though it is out of the scope of this pattern, by predicting these opioid prescribers you can lay the framework to predict the likelihood of a certain type of doctor in prescribing opioids. If we had more years of data we could also predict future rates of overdoses. For now, we'll just take a look at the models.
+
 5. Evaluate the models.
 
 For the code, see the notebook found under docs/source/notebooks or view the notebook here: https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905!
@@ -162,6 +172,8 @@ After running various classifiers, we find that Random Forest, Gradient Boosting
 ![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.30.47%20PM.png)
 
 ![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.30.29%20PM.png)
+
+Awesome job following along! Now go try and take this further or apply it to a different use case!
 
 ## Links
 
