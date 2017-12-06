@@ -149,7 +149,7 @@ options to specify exactly what you want shared from your notebook:
  
  ![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
  
-2. Explore the different datasets using python, pandas and Pixie Dust. Feel free to [follow along in DSX](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905)
+2. Explore the different datasets using python, pandas and Pixie Dust. Feel free to [follow along in DSX](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
 
 To get familiar with your data, explore it with visualizations and by looking at subsets of the data. For example, we see that though California has the highest overdoses, when we correct for population we see that West Virginia actually has the highest rate of overdoses per capita.
 
