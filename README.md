@@ -66,6 +66,8 @@ To create these services:
 
 Take note of your service names as you will need to select them in the following steps.
 
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
+
 ### 2. Create the notebook
 
 First you must create a new Project:
@@ -77,7 +79,6 @@ First you must create a new Project:
 * For ``Target Object Storage Instance``, select your Object Storage service name.
 * Click ``Create``.
 
-![](doc/source/images/create-project.png)
 
 Create the Notebook:
 * Click on your project to open up the project details panel.
@@ -87,7 +88,7 @@ Create the Notebook:
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
-![](doc/source/images/create-notebook.png)
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
 
 ### 3. Run the notebook
 
@@ -114,7 +115,7 @@ There are several ways to execute the code cells in your notebook:
   * Press the `Schedule` button located in the top right section of your notebook
     panel. Here you can schedule your notebook to be executed once at some future
     time, or repeatedly at your specified interval.
-
+    
 ### 4. Save and Share
 
 #### How to save your work:
@@ -157,6 +158,10 @@ For the code, see the notebook found under docs/source/notebooks or view the not
 ## Sample output
 
 After running various classifiers, we find that Random Forest, Gradient Boosting and our Ensemble models had the best performance on predicting opioid prescribers.
+
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.30.47%20PM.png)
+
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.30.29%20PM.png)
 
 ## Links
 
