@@ -43,8 +43,8 @@ TBD
 
 This Code Pattern consists of two activities:
 
-    1.[Run a Jupyter notebook in the IBM Data Science Experience.](#Run-a-Jupyter-notebook-in-the-IBM-Data-Science-Experience)
-    2.[Analyze and Predict the data](#Analyze-and-Predict-the-data).
+* [Run a Jupyter notebook in the IBM Data Science Experience.](#run-a-Jupyter-notebook-in-the-IBM-Data-Science-Experience)
+* [Analyze and Predict the data](#analyze-and-Predict-the-data).
 
 ## Run a Jupyter notebook in the IBM Data Science Experience
 
