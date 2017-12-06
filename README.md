@@ -66,7 +66,7 @@ To create these services:
 
 Take note of your service names as you will need to select them in the following steps.
 
-![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
+![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
 
 ### 2. Create the notebook
 
@@ -88,7 +88,7 @@ Create the Notebook:
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
-![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
+![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
 
 ### 3. Run the notebook
 
@@ -159,9 +159,9 @@ For the code, see the notebook found under docs/source/notebooks or view the not
 
 After running various classifiers, we find that Random Forest, Gradient Boosting and our Ensemble models had the best performance on predicting opioid prescribers.
 
-![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.30.47%20PM.png)
+![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.30.47%20PM.png)
 
-![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.30.29%20PM.png)
+![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.30.29%20PM.png)
 
 ## Links
 
