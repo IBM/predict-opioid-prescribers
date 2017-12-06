@@ -38,22 +38,13 @@ This pattern aims to do just that: it dives into a kaggle dataset which looks at
 
 TBD
 
-## Steps
-
-    1. Sign up for the Data Science Experience.
-    2. Create a notebook and load the data assetts into it as three seperate pandas dataframes.
-    3. Upload the data to DSX as data assetts (this particular kaggle problem has three datasets).
-    4. Explore the different datasets using python, pandas and Pixie Dust.
-    5. Clean the data using python.
-    6. Run several models to predict opioid prescribers using scikit learn.
-    7. Evaluate the models.
 
 # Steps
 
 This Code Pattern consists of two activities:
 
-* [Run a Jupyter notebook in the IBM Data Science Experience.](## Run a Jupyter notebook in the IBM Data Science Experience)
-* [Analyze and Predict the data](#Analyze and Predict the data).
+    1. [Run a Jupyter notebook in the IBM Data Science Experience.](## Run a Jupyter notebook in the IBM Data Science Experience)
+    2. [Analyze and Predict the data](#Analyze and Predict the data).
 
 ## Run a Jupyter notebook in the IBM Data Science Experience
 
