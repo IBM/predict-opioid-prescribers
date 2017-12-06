@@ -44,7 +44,7 @@ TBD
 This Code Pattern consists of two activities:
 
 * [Run a Jupyter notebook in the IBM Data Science Experience.](#run-a-Jupyter-notebook-in-the-IBM-Data-Science-Experience)
-* [Analyze and Predict the data](#analyze-and-Predict-the-data).
+* [Analyze and Predict the data](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/README.md#analyze-and-predict-the-data).
 
 ## Run a Jupyter notebook in the IBM Data Science Experience
 
