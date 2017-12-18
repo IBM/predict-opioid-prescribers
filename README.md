@@ -73,7 +73,7 @@ Take note of your service names as you will need to select them in the following
 > Note: if you would prefer to skip these steps and just follow along by viewing the completed Notebook, simply:
 > * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
-> * When complete, continue this code pattern by jumping ahead to the [Analyze the data in Watson Analytics](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#analyze-the-data-in-watson-analytics) section.
+> * When complete, continue this code pattern by jumping ahead to the [Analyze and Predict the Data](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers#analyze-and-predict-the-data) section.
 
 First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
