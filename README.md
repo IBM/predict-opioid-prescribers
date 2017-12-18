@@ -1,12 +1,12 @@
-# Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers
-A pattern focusing on how to use scikit learn and python (in DSX) to predict opioid prescribers based off of a 2014 kaggle dataset.
+# Use DSX and Scikit Learn to Predict US Opioid Prescribers
+This Code Pattern will focus on and guide you through how to use scikit learn and python (in DSX) to predict opioid prescribers based off of a 2014 kaggle dataset.
 
 ## Use Machine Learning to Predict U.S. Opioid Prescribers with DSX and Scikit Learn
 
 ## Intro
-Opioid prescriptions and overdoses are becoming an increasingly overwhelming problem for the United States, even causing an official state of emergency in recent months. Though we, as data scientists, may not be able to single handedly fix this problem, we can dive into the data and figure out what exactly is going on and what may happen in the future given current circumstances.
+Opioid prescriptions and overdoses are becoming an increasingly overwhelming problem for the United States, even causing a declared state of emergency in recent months. Though we, as data scientists, may not be able to single handedly fix this problem, we can dive into the data and figure out what exactly is going on and what may happen in the future given current circumstances.
 
-This pattern aims to do just that: it dives into a kaggle dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific prescriptions they've prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings geographically and otherwise using Pixie Dust, and then use scikit learn to use machine learning to train several models and figure out which have the most accurate predictions of opioid prescriptions. 
+This Code Pattern aims to do just that: it dives into a kaggle dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific names of the prescriptions they have prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings in a variety of ways, including geographically, using Pixie Dust. Then use the machine learning library, scikit learn, to train several models and figure out which have the most accurate predictions of opioid prescriptions. 
 
 ## Architecture Image
 
@@ -70,6 +70,11 @@ Take note of your service names as you will need to select them in the following
 
 ### 2. Create the notebook
 
+> Note: if you would prefer to skip these steps and just follow along by viewing the completed Notebook, simply:
+> * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905) and its outputs, as is.
+> * While viewing the notebook, you can optionally download it to store for future use.
+> * When complete, continue this code pattern by jumping ahead to the [Analyze the data in Watson Analytics](https://github.com/IBM/visualize-food-insecurity/tree/visualize-food-insecurity#analyze-the-data-in-watson-analytics) section.
+
 First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
 * Click on ``New project`` under ``Recently updated projects``.
@@ -88,6 +93,14 @@ Create the Notebook:
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
+Upload the data as data assets:
+* This project has 3 datasets. Upload all three as data assets in your project.    
+* Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). 
+* Click on the "1001" data icon in the top right. The data files should show up. 
+* Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
+* Make sure your opioids.csv is saved as df_data_1, overdoses.csv is saved as df_data_2 and prescriber_info.csv is saved as df_data_3 so that it is consistent with my notebook and so you do not have to change the code.
+
+ ![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
 
 ### 3. Run the notebook
 
@@ -142,26 +155,20 @@ options to specify exactly what you want shared from your notebook:
 * A variety of `download as` options are also available in the menu.
 
 ## Analyze and Predict the data
-
-1. Upload the data to DSX as data assets (this particular kaggle problem has three datasets).
-
- To begin, I used the included data as my three data assets. You'll want to upload each as a data asset and once that is    complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). To load your data in your notebook, you'll click on the "1001" data icon in the top right. The combined_data.csv should show up. Click on it and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
  
- ![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
- 
-2. Explore the different datasets using python, pandas and Pixie Dust. Feel free to [follow along in DSX](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
+1. Explore the different datasets using python, pandas and Pixie Dust. Feel free to [follow along in DSX](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
 
 To get familiar with your data, explore it with visualizations and by looking at subsets of the data. For example, we see that though California has the highest overdoses, when we correct for population we see that West Virginia actually has the highest rate of overdoses per capita.
 
-3. Clean the data using python.
+2. Clean the data using python.
 
 Every dataset has its imperfections. Let's clean ours up by making the States consistent and changing our columns to allow us to use them as integers.
 
-4. Run several models to predict opioid prescribers using scikit learn.
+3. Run several models to predict opioid prescribers using scikit learn.
 
 You can check out the output in the notebook or in the image below. In this step we run several machine learning models in order to evaluate which is the most effective at predicting opioid prescribers. Though it is beyond the scope of this pattern, by predicting these opioid prescribers you are laying the framework to predict the likelihood that a certain type of doctor prescribes opioids. Additionally, if we had more years of data (beyond 2014) we could also predict future rates of overdoses. For now, we'll just take a look at the models.
 
-5. Evaluate the models.
+4. Evaluate the models.
 
 For the code, see the notebook found under docs/source/notebooks or view the notebook here: https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905!
 
