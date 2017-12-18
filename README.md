@@ -89,7 +89,7 @@ Create the Notebook:
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* For ``Notebook URL`` enter: https://github.com/IBM/Visualizing-Food-Insecurity-with-Pixie-Dust-and-Watson-Analytics/blob/master/notebooks/Diet-Related-Disease-Exploration.ipynb
+* For ``Notebook URL`` enter: https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/notebooks/opioid-prescription-prediction.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
@@ -156,7 +156,7 @@ options to specify exactly what you want shared from your notebook:
 
 ## Analyze and Predict the data
  
-1. Explore the different datasets using python, pandas and Pixie Dust. Feel free to [follow along in DSX](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
+1. Explore the different datasets using python, pandas and Pixie Dust. Once again, feel free to [follow along in DSX](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
 
 To get familiar with your data, explore it with visualizations and by looking at subsets of the data. For example, we see that though California has the highest overdoses, when we correct for population we see that West Virginia actually has the highest rate of overdoses per capita.
 
