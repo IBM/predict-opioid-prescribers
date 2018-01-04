@@ -166,7 +166,7 @@ You can check out the output in the notebook or in the image below. In this step
 
 4. Evaluate the models.
 
-For the code, see the notebook found under `notebooks` or view the notebook [here](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905)!
+For the code, see the notebook found locally under [notebooks](notebooks), or view the notebook [here](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905)!
 
 ## Sample output
 
