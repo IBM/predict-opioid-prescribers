@@ -1,16 +1,14 @@
-# Use DSX and Scikit Learn to Predict US Opioid Prescribers
-This Code Pattern will focus on and guide you through how to use scikit learn and python (in DSX) to predict opioid prescribers based off of a 2014 kaggle dataset.
-
 ## Use Machine Learning to Predict U.S. Opioid Prescribers with DSX and Scikit Learn
 
-## Intro
+This Code Pattern will focus on and guide you through how to use `scikit learn` and `python` (in DSX) to predict opioid prescribers based off of a 2014 kaggle dataset.
+
 Opioid prescriptions and overdoses are becoming an increasingly overwhelming problem for the United States, even causing a declared state of emergency in recent months. Though we, as data scientists, may not be able to single handedly fix this problem, we can dive into the data and figure out what exactly is going on and what may happen in the future given current circumstances.
 
 This Code Pattern aims to do just that: it dives into a kaggle dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific names of the prescriptions they have prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings in a variety of ways, including geographically, using Pixie Dust. Then use the machine learning library, scikit learn, to train several models and figure out which have the most accurate predictions of opioid prescriptions. 
 
 ## Architecture Image
 
-![alt text](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/docs/source/images/architecture.png)
+![](doc/source/images/architecture.png)
 
 ## Flow
 
@@ -38,13 +36,12 @@ This Code Pattern aims to do just that: it dives into a kaggle dataset which loo
 
 TBD
 
-
 # Steps
 
 This Code Pattern consists of two activities:
 
-* [Run a Jupyter notebook in the IBM Data Science Experience.](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/README.md#run-a-jupyter-notebook-in-the-ibm-data-science-experience)
-* [Analyze and Predict the data](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/README.md#analyze-and-predict-the-data).
+* [Run a Jupyter notebook in the IBM Data Science Experience.](#run-a-jupyter-notebook-in-the-ibm-data-science-experience)
+* [Analyze and Predict the data](#analyze-and-predict-the-data).
 
 ## Run a Jupyter notebook in the IBM Data Science Experience
 
@@ -73,7 +70,7 @@ Take note of your service names as you will need to select them in the following
 > Note: if you would prefer to skip these steps and just follow along by viewing the completed Notebook, simply:
 > * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
-> * When complete, continue this code pattern by jumping ahead to the [Analyze and Predict the Data](https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers#analyze-and-predict-the-data) section.
+> * When complete, continue this code pattern by jumping ahead to the [Analyze and Predict the Data](#analyze-and-predict-the-data) section.
 
 First you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
@@ -84,12 +81,11 @@ First you must create a new Project:
 * For ``Target Object Storage Instance``, select your Object Storage service name.
 * Click ``Create``.
 
-
 Create the Notebook:
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* For ``Notebook URL`` enter: https://github.com/MadisonJMyers/Use-DSX-and-Scikit-Learn-to-Predict-US-Opioid-Prescribers/blob/master/notebooks/opioid-prescription-prediction.ipynb
+* For ``Notebook URL`` enter: https://github.com/IBM/predict-opiod-prescribers/blob/master/notebooks/opioid-prescription-prediction.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
@@ -190,19 +186,12 @@ Awesome job following along! Now go try and take this further or apply it to a d
  - Data: https://www.kaggle.com/apryor6/us-opiate-prescriptions/data
  - Scikit Learn: http://scikit-learn.org/stable/
 
-## License
+# Learn more
 
- Copyright 2017 IBM Corp. All Rights Reserved.
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
+# License
+[Apache 2.0](LICENSE)
