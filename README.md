@@ -63,7 +63,7 @@ To create these services:
 
 Take note of your service names as you will need to select them in the following steps.
 
-![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.22.06%20PM.png)
 
 ### 2. Create the notebook
 
@@ -96,7 +96,7 @@ Upload the data as data assets:
 * Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
 * Make sure your opioids.csv is saved as df_data_1, overdoses.csv is saved as df_data_2 and prescriber_info.csv is saved as df_data_3 so that it is consistent with my notebook and so you do not have to change the code.
 
- ![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
+ ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
 
 ### 3. Run the notebook
 
@@ -166,15 +166,15 @@ You can check out the output in the notebook or in the image below. In this step
 
 4. Evaluate the models.
 
-For the code, see the notebook found under docs/source/notebooks or view the notebook [here](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905)!
+For the code, see the notebook found under `notebooks` or view the notebook [here](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905)!
 
 ## Sample output
 
 After running various classifiers, we find that Random Forest, Gradient Boosting and our Ensemble models had the best performance on predicting opioid prescribers.
 
-![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.30.47%20PM.png)
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.30.47%20PM.png)
 
-![](docs/source/images/Screen%20Shot%202017-12-06%20at%202.30.29%20PM.png)
+![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.30.29%20PM.png)
 
 Awesome job following along! Now go try and take this further or apply it to a different use case!
 
