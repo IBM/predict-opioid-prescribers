@@ -90,7 +90,7 @@ Create the Notebook:
 * Click ``Create Notebook``.
 
 Upload the data as data assets:
-* This project has 3 datasets. Upload all three as data assets in your project.    
+* This project has 3 datasets. Upload all three as data assets in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.   
 * Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). 
 * Click on the "1001" data icon in the top right. The data files should show up. 
 * Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
