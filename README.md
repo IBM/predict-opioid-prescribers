@@ -1,10 +1,10 @@
 ## Use Machine Learning to Predict U.S. Opioid Prescribers with DSX and Scikit Learn
 
-This Code Pattern will focus on and guide you through how to use `scikit learn` and `python` (in DSX) to predict opioid prescribers based off of a [2014 kaggle dataset](https://www.kaggle.com/apryor6/us-opiate-prescriptions/data).
+This Code Pattern will focus on and guide you through how to use `scikit learn` and `python` (in the Data Science Experience, or DSX) to predict opioid prescribers based off of a [2014 kaggle dataset](https://www.kaggle.com/apryor6/us-opiate-prescriptions/data).
 
 Opioid prescriptions and overdoses are becoming an increasingly overwhelming problem for the United States, even causing a declared state of emergency in recent months. Though we, as data scientists, may not be able to single handedly fix this problem, we can dive into the data and figure out what exactly is going on and what may happen in the future given current circumstances.
 
-This Code Pattern aims to do just that: it dives into a kaggle dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific names of the prescriptions they have prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings in a variety of ways, including geographically, using Pixie Dust. Then use the machine learning library, scikit learn, to train several models and figure out which have the most accurate predictions of opioid prescriptions. 
+This Code Pattern aims to do just that: it dives into a kaggle dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific names of the prescriptions they have prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings in a variety of ways, including geographically, using Pixie Dust. Pixie Dust is a great library to use when you need to explore your data visually very quickly. It literally only needs one line of code! Once that initial exploration is complete, this Code Pattern uses the machine learning library, scikit learn, to train several models and figure out which have the most accurate predictions of opioid prescriptions. Scikit learn, if you're unfamiliar, is a machine learning library, which is commonly used by data scientists due to its ease of use. Specifically, by using the library you're able to easily access a number of machine learning classifiers which you can implement with relatively minimal lines of code. Even more, scikit learn allows you to visualize your output, showcasing your findings. Because of this, the library is often used in machine learning classes to teach what different classifiers do- much like the comparative output this Code Pattern highlights! Ready to dive in?
 
 ## Architecture Image
 
@@ -46,7 +46,7 @@ This Code Pattern consists of two activities:
 ## Run a Jupyter notebook in the IBM Data Science Experience
 
 1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
-2. [Create the notebook](#2-create-the-notebook)
+2. [Create the notebook](https://github.com/IBM/predict-opioid-prescribers#2-create-the-notebook)
 3. [Run the notebook](#3-run-the-notebook)
 4. [Save and Share](#4-save-and-share)
 
@@ -85,7 +85,7 @@ Create the Notebook:
 * Click on your project to open up the project details panel.
 * Click ``add notebooks``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* For ``Notebook URL`` enter: https://github.com/IBM/predict-opiod-prescribers/blob/master/notebooks/opioid-prescription-prediction.ipynb
+* For ``Notebook URL`` enter: https://github.com/IBM/predict-opioid-prescribers/blob/master/notebooks/opioid-prescription-prediction.ipynb
 * For ``Spark Service``, select your Apache Spark service name.
 * Click ``Create Notebook``.
 
