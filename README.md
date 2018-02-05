@@ -72,7 +72,7 @@ Take note of your service names as you will need to select them in the following
 > * While viewing the notebook, you can optionally download it to store for future use.
 > * When complete, continue this code pattern by jumping ahead to the [Analyze and Predict the Data](#analyze-and-predict-the-data) section.
 
-First you must create a new Project:
+If you want to create the project on your own, first you must create a new Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
 * Click on ``New project`` under ``Recently updated projects``.
 * Enter a ``Name`` and optional ``Description``. 
@@ -94,7 +94,7 @@ Upload the data as data assets:
 * Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). 
 * Click on the "1001" data icon in the top right. The data files should show up. 
 * Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
-* Make sure your opioids.csv is saved as df_data_1, overdoses.csv is saved as df_data_2 and prescriber_info.csv is saved as df_data_3 so that it is consistent with my notebook and so you do not have to change the code.
+* Make sure your opioids.csv is saved as df_data_1, overdoses.csv is saved as df_data_2 and prescriber_info.csv is saved as df_data_3 so that it is consistent with the original notebook. You may have to edit this because when your data is loaded into the notebook, it may be defined as a continuation of data frames, based on where I left off. This means your data may show up with opioids.csv as df_data_4, overdoses.csv as df_data_5 and so on. Either adjust the data frame names to be in sync with mine (remove where I loaded data and rename your data frames or input your loading information into the original code) or edit the following code below accordingly. Do this to make sure the code will run!
 
  ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
 
