@@ -10,11 +10,11 @@ This Code Pattern aims to do just that: it dives into a kaggle dataset which loo
 
 ## Flow
 
-1. Log in to or start a DSX account.
+1. Log into IBM's DSX service.
 2. Upload the data as a data asset into DSX.
-3. Start a notebook in DSX.
-4. Input the data into your notebook from your data assets.
-5. Explore the data with python pandas and Pixie Dust.
+3. Start a notebook in DSX and input the data asset previously created.
+4. Explore the data with pandas
+5. Create data visualizations with Pixie Dust.
 6. Train machine learning models with scikit learn.
 7. Evaluate their prediction performance.
 
@@ -29,10 +29,6 @@ This Code Pattern aims to do just that: it dives into a kaggle dataset which loo
 * [Data Science](https://medium.com/ibm-data-science-experience/): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
 * [pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
-
-## Watch the Video
-
-TBD
 
 # Steps
 
