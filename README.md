@@ -46,7 +46,7 @@ This Code Pattern consists of two activities:
 
 ### 1. Sign up for the Data Science Experience
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your IBM Cloud account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's [Data Science Experience](https://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your IBM Cloud account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
 
 To create these services:
 * Login to your [IBM Cloud](http://bluemix.net) account.
@@ -86,9 +86,9 @@ Create the Notebook:
 Upload the data as data assets:
 * This project has 3 datasets. Upload all three as data assets in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.   
 * Once complete, go into your notebook in the edit mode (click on the pencil icon next to your notebook on the dashboard). 
-* Click on the "1001" data icon in the top right. The data files should show up. 
-* Click on each and select "Insert Pandas Data Frame". Once you do that, a whole bunch of code will show up in your first cell. 
-* Make sure your opioids.csv is saved as df_data_1, overdoses.csv is saved as df_data_2 and prescriber_info.csv is saved as df_data_3 so that it is consistent with the original notebook. You may have to edit this because when your data is loaded into the notebook, it may be defined as a continuation of data frames, based on where I left off. This means your data may show up with opioids.csv as df_data_4, overdoses.csv as df_data_5 and so on. Either adjust the data frame names to be in sync with mine (remove where I loaded data and rename your data frames or input your loading information into the original code) or edit the following code below accordingly. Do this to make sure the code will run!
+* Click on the ``1001`` data icon in the top right. The data files should show up. 
+* Click on each and select ``Insert Pandas Data Frame``. Once you do that, a whole bunch of code will show up in your first cell. 
+* Make sure your ``opioids.csv`` is saved as ``df_data_1``, ``overdoses.csv`` is saved as ``df_data_2`` and ``prescriber_info.csv`` is saved as ``df_data_3`` so that it is consistent with the original notebook. You may have to edit this because when your data is loaded into the notebook, it may be defined as a continuation of data frames, based on where I left off. This means your data may show up with ``opioids.csv`` as ``df_data_4``, ``overdoses.csv`` as ``df_data_5`` and so on. Either adjust the data frame names to be in sync with mine (remove where I loaded data and rename your data frames or input your loading information into the original code) or edit the following code below accordingly. Do this to make sure the code will run!
 
  ![](doc/source/images/Screen%20Shot%202017-12-06%20at%202.29.41%20PM.png)
 
@@ -132,7 +132,7 @@ Under the `File` menu, there are several ways to save your notebook:
 
 #### How to share your work:
 
-You can share your notebook by selecting the “Share” button located in the top
+You can share your notebook by selecting the ``Share`` button located in the top
 right section of your notebook panel. The end result of this action will be a URL
 link that will display a “read-only” version of your notebook. You have several
 options to specify exactly what you want shared from your notebook:
