@@ -1,6 +1,8 @@
 ## Use Machine Learning to Predict U.S. Opioid Prescribers with Watson Studio and Scikit Learn
 
-This Code Pattern will focus on and guide you through how to use `scikit learn` and `python` (in the Watson Studio, or Watson Studio) to predict opioid prescribers based off of a [2014 kaggle dataset](https://www.kaggle.com/apryor6/us-opiate-prescriptions/data).
+> Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
+
+This Code Pattern will focus on and guide you through how to use `scikit learn` and `python` in Watson Studio to predict opioid prescribers based off of a [2014 kaggle dataset](https://www.kaggle.com/apryor6/us-opiate-prescriptions/data).
 
 Opioid prescriptions and overdoses are becoming an increasingly overwhelming problem for the United States, even causing a declared state of emergency in recent months. Though we, as data scientists, may not be able to single handedly fix this problem, we can dive into the data and figure out what exactly is going on and what may happen in the future given current circumstances.
 
@@ -20,7 +22,7 @@ This Code Pattern aims to do just that: it dives into a kaggle dataset which loo
 
 ## Included components
 
-* [IBM Watson Studio](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://dataplatform.ibm.com): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 * [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
 * [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust): Provides a Python helper library for IPython Notebook.
 
@@ -34,26 +36,21 @@ This Code Pattern aims to do just that: it dives into a kaggle dataset which loo
 
 This Code Pattern consists of two activities:
 
-* [Run a Jupyter notebook in the IBM Watson Studio.](#run-a-jupyter-notebook-in-the-ibm-data-science-experience)
+* [Run a Jupyter notebook in Watson Studio.](#run-a-jupyter-notebook-in-watson-studio)
 * [Analyze and Predict the data](#analyze-and-predict-the-data).
 
-## Run a Jupyter notebook in the IBM Watson Studio
+## Run a Jupyter notebook in Watson Studio
 
-1. [Sign up for the Watson Studio](#1-sign-up-for-the-data-science-experience)
-2. [Create the notebook](https://github.com/IBM/predict-opioid-prescribers#2-create-the-notebook)
+1. [Sign up for Watson Studio](#1-sign-up-for-watson-studio)
+2. [Create the notebook](#2-create-the-notebook)
 3. [Run the notebook](#3-run-the-notebook)
 4. [Save and Share](#4-save-and-share)
 
-### 1. Sign up for the Watson Studio
+### 1. Sign up for Watson Studio
 
-Sign up for IBM's [Watson Studio](https://datascience.ibm.com/). By signing up for the Watson Studio, two services: ``Apache Spark`` and ``Object Storage`` will be created in your IBM Cloud account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account.
 
-To create these services:
-* Login to your [IBM Cloud](http://bluemix.net) account.
-* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If not already used, name your service ``Apache Spark``. 
-* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If not already used, name your service ``Watson Studio-ObjectStorage``.
-
-> Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
+> Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
 Take note of your service names as you will need to select them in the following steps.
 
@@ -66,22 +63,13 @@ Take note of your service names as you will need to select them in the following
 > * While viewing the notebook, you can optionally download it to store for future use.
 > * When complete, continue this code pattern by jumping ahead to the [Analyze and Predict the Data](#analyze-and-predict-the-data) section.
 
-If you want to create the project on your own, first you must create a new Project:
-* From the [IBM Watson Studio page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
-* Click on ``New project`` under ``Recently updated projects``.
-* Enter a ``Name`` and optional ``Description``. 
-* For ``Spark Service``, select your Apache Spark service name.
-* For ``Storage Type``, select the ``Object Storage (Swift API)`` option.
-* For ``Target Object Storage Instance``, select your Object Storage service name.
-* Click ``Create``.
-
-Create the Notebook:
-* Click on your project to open up the project details panel.
-* Click ``add notebooks``.
-* Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
-* For ``Notebook URL`` enter: https://github.com/IBM/predict-opioid-prescribers/blob/master/notebooks/opioid-prescription-prediction.ipynb
-* For ``Spark Service``, select your Apache Spark service name.
-* Click ``Create Notebook``.
+* Click on `Create notebook` to create a notebook.
+* Select the `From URL` tab.
+* Enter a name for the notebook.
+* Optionally, enter a description for the notebook.
+* Enter this Notebook URL: https://github.com/IBM/predict-opioid-prescribers/blob/master/notebooks/opioid-prescription-prediction.ipynb
+* Select the free Anaconda runtime.
+* Click the `Create` button.
 
 Upload the data as data assets:
 * This project has 3 datasets. Upload all three as data assets in your project. Do this by loading each dataset into the pop up section on the right hand side. Please see a screenshot of what it should look like below.   
@@ -174,8 +162,8 @@ Awesome job following along! Now go try and take this further or apply it to a d
 
 ## Links
 
- - Watson Studio:https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
- - Pandas:http://pandas.pydata.org/
+ - Watson Studio: https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
+ - Pandas: http://pandas.pydata.org/
  - Pixie Dust: https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html#introduction
  - Data: https://www.kaggle.com/apryor6/us-opiate-prescriptions/data
  - Scikit Learn: http://scikit-learn.org/stable/
