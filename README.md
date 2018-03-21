@@ -1,18 +1,18 @@
-## Use Machine Learning to Predict U.S. Opioid Prescribers with DSX and Scikit Learn
+## Use Machine Learning to Predict U.S. Opioid Prescribers with Watson Studio and Scikit Learn
 
-This Code Pattern will focus on and guide you through how to use `scikit learn` and `python` (in the Data Science Experience, or DSX) to predict opioid prescribers based off of a [2014 kaggle dataset](https://www.kaggle.com/apryor6/us-opiate-prescriptions/data).
+This Code Pattern will focus on and guide you through how to use `scikit learn` and `python` (in the Watson Studio, or Watson Studio) to predict opioid prescribers based off of a [2014 kaggle dataset](https://www.kaggle.com/apryor6/us-opiate-prescriptions/data).
 
 Opioid prescriptions and overdoses are becoming an increasingly overwhelming problem for the United States, even causing a declared state of emergency in recent months. Though we, as data scientists, may not be able to single handedly fix this problem, we can dive into the data and figure out what exactly is going on and what may happen in the future given current circumstances.
 
-This Code Pattern aims to do just that: it dives into a kaggle dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific names of the prescriptions they have prescribed. Follow along to see how to explore the data in a DSX notebook, visualize a few initial findings in a variety of ways, including geographically, using Pixie Dust. Pixie Dust is a great library to use when you need to explore your data visually very quickly. It literally only needs one line of code! Once that initial exploration is complete, this Code Pattern uses the machine learning library, scikit learn, to train several models and figure out which have the most accurate predictions of opioid prescriptions. Scikit learn, if you're unfamiliar, is a machine learning library, which is commonly used by data scientists due to its ease of use. Specifically, by using the library you're able to easily access a number of machine learning classifiers which you can implement with relatively minimal lines of code. Even more, scikit learn allows you to visualize your output, showcasing your findings. Because of this, the library is often used in machine learning classes to teach what different classifiers do- much like the comparative output this Code Pattern highlights! Ready to dive in?
+This Code Pattern aims to do just that: it dives into a kaggle dataset which looks at opioid overdose deaths by state as well as different, unique physicians, their credentials, specialties, whether or not they've prescribed opioids in 2014 as well as the specific names of the prescriptions they have prescribed. Follow along to see how to explore the data in a Watson Studio notebook, visualize a few initial findings in a variety of ways, including geographically, using Pixie Dust. Pixie Dust is a great library to use when you need to explore your data visually very quickly. It literally only needs one line of code! Once that initial exploration is complete, this Code Pattern uses the machine learning library, scikit learn, to train several models and figure out which have the most accurate predictions of opioid prescriptions. Scikit learn, if you're unfamiliar, is a machine learning library, which is commonly used by data scientists due to its ease of use. Specifically, by using the library you're able to easily access a number of machine learning classifiers which you can implement with relatively minimal lines of code. Even more, scikit learn allows you to visualize your output, showcasing your findings. Because of this, the library is often used in machine learning classes to teach what different classifiers do- much like the comparative output this Code Pattern highlights! Ready to dive in?
 
 ![](doc/source/images/architecture.png)
 
 ## Flow
 
-1. Log into IBM's DSX service.
-2. Upload the data as a data asset into DSX.
-3. Start a notebook in DSX and input the data asset previously created.
+1. Log into IBM's Watson Studio service.
+2. Upload the data as a data asset into Watson Studio.
+3. Start a notebook in Watson Studio and input the data asset previously created.
 4. Explore the data with pandas
 5. Create data visualizations with Pixie Dust.
 6. Train machine learning models with scikit learn.
@@ -20,7 +20,7 @@ This Code Pattern aims to do just that: it dives into a kaggle dataset which loo
 
 ## Included components
 
-* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 * [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
 * [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust): Provides a Python helper library for IPython Notebook.
 
@@ -34,24 +34,24 @@ This Code Pattern aims to do just that: it dives into a kaggle dataset which loo
 
 This Code Pattern consists of two activities:
 
-* [Run a Jupyter notebook in the IBM Data Science Experience.](#run-a-jupyter-notebook-in-the-ibm-data-science-experience)
+* [Run a Jupyter notebook in the IBM Watson Studio.](#run-a-jupyter-notebook-in-the-ibm-data-science-experience)
 * [Analyze and Predict the data](#analyze-and-predict-the-data).
 
-## Run a Jupyter notebook in the IBM Data Science Experience
+## Run a Jupyter notebook in the IBM Watson Studio
 
-1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
+1. [Sign up for the Watson Studio](#1-sign-up-for-the-data-science-experience)
 2. [Create the notebook](https://github.com/IBM/predict-opioid-prescribers#2-create-the-notebook)
 3. [Run the notebook](#3-run-the-notebook)
 4. [Save and Share](#4-save-and-share)
 
-### 1. Sign up for the Data Science Experience
+### 1. Sign up for the Watson Studio
 
-Sign up for IBM's [Data Science Experience](https://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your IBM Cloud account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
+Sign up for IBM's [Watson Studio](https://datascience.ibm.com/). By signing up for the Watson Studio, two services: ``Watson Studio-Spark`` and ``Watson Studio-ObjectStore`` will be created in your IBM Cloud account. If these services do not exist, or if you are already using them for some other application, you will need to create new instances.
 
 To create these services:
 * Login to your [IBM Cloud](http://bluemix.net) account.
-* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If not already used, name your service ``DSX-Spark``. 
-* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If not already used, name your service ``DSX-ObjectStorage``.
+* Create your Spark service by selecting the service type [Apache Spark](https://console.bluemix.net/catalog/services/apache-spark). If not already used, name your service ``Watson Studio-Spark``. 
+* Create your Object Storage service by selecting the service type [Cloud Object Storage](https://console.bluemix.net/catalog/infrastructure/object-storage-group). If not already used, name your service ``Watson Studio-ObjectStorage``.
 
 > Note: When creating your Object Storage service, select the ``Swift`` storage type in order to avoid having to pay an upgrade fee.
 
@@ -67,7 +67,7 @@ Take note of your service names as you will need to select them in the following
 > * When complete, continue this code pattern by jumping ahead to the [Analyze and Predict the Data](#analyze-and-predict-the-data) section.
 
 If you want to create the project on your own, first you must create a new Project:
-* From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
+* From the [IBM Watson Studio page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
 * Click on ``New project`` under ``Recently updated projects``.
 * Enter a ``Name`` and optional ``Description``. 
 * For ``Spark Service``, select your Apache Spark service name.
@@ -146,7 +146,7 @@ options to specify exactly what you want shared from your notebook:
 
 ## Analyze and Predict the data
  
-1. Explore the different datasets using python, pandas and Pixie Dust. Once again, feel free to [follow along in DSX](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
+1. Explore the different datasets using python, pandas and Pixie Dust. Once again, feel free to [follow along in Watson Studio](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
 
 To get familiar with your data, explore it with visualizations and by looking at subsets of the data. For example, we see that though California has the highest overdoses, when we correct for population we see that West Virginia actually has the highest rate of overdoses per capita.
 
@@ -174,7 +174,7 @@ Awesome job following along! Now go try and take this further or apply it to a d
 
 ## Links
 
- - DSX:https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
+ - Watson Studio:https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
  - Pandas:http://pandas.pydata.org/
  - Pixie Dust: https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html#introduction
  - Data: https://www.kaggle.com/apryor6/us-opiate-prescriptions/data
@@ -184,7 +184,7 @@ Awesome job following along! Now go try and take this further or apply it to a d
 
 * **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
-* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://datascience.ibm.com/)
 * **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
 
 # License
