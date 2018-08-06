@@ -103,8 +103,7 @@ IBM [Watson Studio](https://dataplatform.ibm.com) にログインまたは登録
   ![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/notebook_with_url_spark.png)
 
 * 以下の URL を入力します:
-
-  ```
+```
 https://github.com/IBM/predict-opioid-prescribers/blob/master/notebooks/opioid-prescription-prediction.ipynb
 ```
 
