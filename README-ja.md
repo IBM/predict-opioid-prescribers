@@ -206,8 +206,8 @@ https://github.com/IBM/predict-opioid-prescribers/blob/master/notebooks/opioid-p
 
 * **Data Analytics コードパターン**: このコードパターンを気に入りましたか？ [Data Analytics コードパターン](https://developer.ibm.com/jp/technologies/data-science/) から関連パターンを参照してください。
 * **AI and Data コードパターン・プレイリスト**: コードパターンに関係するビデオ全ての [プレイリスト](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) です。
-* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://dataplatform.ibm.com/)
-* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
+* **Watson Studio**: IBM [Watson Studio](https://dataplatform.ibm.com/) データ・サイエンス技術を習得する。
+* **Spark on IBM Cloud**: Spark クラスターが必要ですか？ [Sparkサービス](https://console.bluemix.net/catalog/services/apache-spark) を使用して IBM Cloud 上で最大30人の Spark エグゼキュータを作成する。
 
 # ライセンス
 [Apache 2.0](LICENSE)
