@@ -24,15 +24,15 @@ This Code Pattern aims to do just that: it dives into a kaggle dataset which loo
 
 ## Included components
 
-* [IBM Watson Studio](https://dataplatform.ibm.com): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
-* [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
-* [PixieDust](https://github.com/ibm-watson-data-lab/pixiedust): Provides a Python helper library for IPython Notebook.
+* [IBM Watson Studio](https://dataplatform.cloud.ibm.com/): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [Jupyter Notebook](https://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
+* [PixieDust](https://github.com/pixiedust/pixiedust): Provides a Python helper library for IPython Notebook.
 
 ## Featured technologies
 
 * [Data Science](https://medium.com/ibm-data-science-experience/): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
-* [pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
+* [pandas](https://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
 
 # Steps
 
@@ -52,10 +52,10 @@ This Code Pattern consists of two activities:
 
 ### 1. Sign up for the Watson Studio
 
-Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
+Log in or sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/).
 
 > Note: if you would prefer to skip the remaining Watson Studio set-up steps and just follow along by viewing the completed Notebook, simply:
-> * View the completed [notebook](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905) and its outputs, as is.
+> * View the completed [notebook](https://dataplatform.cloud.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
 > * When complete, continue this code pattern by jumping ahead to the [Analyze and Predict the data](#analyze-and-predict-the-data) section.
 
@@ -160,7 +160,7 @@ options to specify exactly what you want shared from your notebook:
 
 ## Analyze and Predict the data
  
-1. Explore the different datasets using python, pandas and Pixie Dust. Once again, feel free to [follow along in Watson Studio](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
+1. Explore the different datasets using python, pandas and Pixie Dust. Once again, feel free to [follow along in Watson Studio](https://dataplatform.cloud.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905).
 
 To get familiar with your data, explore it with visualizations and by looking at subsets of the data. For example, we see that though California has the highest overdoses, when we correct for population we see that West Virginia actually has the highest rate of overdoses per capita.
 
@@ -174,7 +174,7 @@ You can check out the output in the notebook or in the image below. In this step
 
 4. Evaluate the models.
 
-For the code, see the notebook found locally under [notebooks](notebooks), or view the notebook [here](https://dataplatform.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905)!
+For the code, see the notebook found locally under [notebooks](notebooks), or view the notebook [here](https://dataplatform.cloud.ibm.com/analytics/notebooks/c32975c1-3994-42cc-8e2d-3f579ceebf63/view?access_token=cdb14a077ed4746b09b1dbaa05aee70133589f001dbb7582ba4e7fcfdd73a905)!
 
 ## Sample output
 
@@ -189,20 +189,20 @@ Awesome job following along! Now go try and take this further or apply it to a d
 ## Links
 
  - Watson Studio: https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
- - Pandas: http://pandas.pydata.org/
+ - Pandas: https://pandas.pydata.org/
  - Pixie Dust: https://ibm-watson-data-lab.github.io/pixiedust/displayapi.html#introduction
  - Data: https://www.kaggle.com/apryor6/us-opiate-prescriptions/data
  - Scikit Learn: http://scikit-learn.org/stable/
 
 # Learn more
 
-* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/technologies/data-science/)
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
-* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://dataplatform.ibm.com/)
-* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://console.bluemix.net/catalog/services/apache-spark)
+* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/)
+* **Spark on IBM Cloud**: Need a Spark cluster? Create up to 30 Spark executors on IBM Cloud with our [Spark service](https://cloud.ibm.com/catalog/services/apache-spark)
 
 # License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
