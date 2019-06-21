@@ -1,7 +1,5 @@
 # Use Machine Learning to Predict U.S. Opioid Prescribers with Watson Studio and Scikit Learn
 
-> Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
-
 This Code Pattern will focus on and guide you through how to use `scikit learn` and `python` in Watson Studio to predict opioid prescribers based off of a [2014 kaggle dataset](https://www.kaggle.com/apryor6/us-opiate-prescriptions/data).
 
 Opioid prescriptions and overdoses are becoming an increasingly overwhelming problem for the United States, even causing a declared state of emergency in recent months. Though we, as data scientists, may not be able to single handedly fix this problem, we can dive into the data and figure out what exactly is going on and what may happen in the future given current circumstances.
